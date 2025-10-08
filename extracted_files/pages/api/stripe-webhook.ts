@@ -2,6 +2,7 @@ import { buffer } from 'micro';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { stripe } from '../../lib/stripe';
 import { supabaseAdmin } from '../../lib/supabaseAdmin';
+import type Stripe from 'stripe';
 
 export const config = {
   api: { bodyParser: false },
